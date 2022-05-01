@@ -1,0 +1,12 @@
+{
+  "name": "nocturnal",
+  "version": "0.0.1",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "frontend:dev": "npm run dev --workspace='frontend'",
+    "backend:dev": "npm run start:dev --workspace='backend'"
+  }
+}
