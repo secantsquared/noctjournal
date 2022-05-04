@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import type { AppProps } from 'next/app'
-import ScopedCssBaseline from '@mui/material/ScopedCssBaseline'
+import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -8,9 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
-      <ScopedCssBaseline>
-        <Component {...pageProps} />
-      </ScopedCssBaseline>
+      <Component {...pageProps} />
     </>
   )
 }

@@ -1,20 +1,9 @@
-import Button from '@mui/material/Button'
-
-interface HomeProps {
-  message: string
-}
-
-function Home({ message }: HomeProps) {
+export default function Home() {
   return (
-    <div>
-      <h1>{message}</h1>
-      <Button variant="contained">CLICK ME!</Button>
-    </div>
+    <>
+      <div>
+        <h1 className="text-3xl font-bold underline">TEST</h1>
+      </div>
+    </>
   )
 }
-
-function Root() {
-  return <Home message="SANITY" />
-}
-
-export default Root
